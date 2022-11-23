@@ -5,14 +5,9 @@ import {useTelegram} from "../../hooks/useTelegram";
 import {useCallback, useEffect} from "react";
 
 const products = [
-    {id: '1', title: 'Джинсы', price: 5000, description: 'Синего цвета, прямые'},
-    {id: '2', title: 'Куртка', price: 12000, description: 'Зеленого цвета, теплая'},
-    {id: '3', title: 'Джинсы 2', price: 5000, description: 'Синего цвета, прямые'},
-    {id: '4', title: 'Куртка 8', price: 122, description: 'Зеленого цвета, теплая'},
-    {id: '5', title: 'Джинсы 3', price: 5000, description: 'Синего цвета, прямые'},
-    {id: '6', title: 'Куртка 7', price: 600, description: 'Зеленого цвета, теплая'},
-    {id: '7', title: 'Джинсы 4', price: 5500, description: 'Синего цвета, прямые'},
-    {id: '8', title: 'Куртка 5', price: 12000, description: 'Зеленого цвета, теплая'},
+    {id: '1', img: "https://sun9-87.userapi.com/impg/JKQEo5WosRHjSGdF2AzgpHQktMhLYMsKjDTBIg/pEvQoaha1NE.jpg?size=800x600&quality=96&sign=d0a5c4c79ac0f255a7df4c6d91d079d7&type=album",title: 'Постельное бельё', price: 5000, description: 'Более 15 цветов на разный вкус'},
+    {id: '2', img: "https://sun9-68.userapi.com/impg/k87SE2y83CQbQ3kucjhSX3AcL31aZdUmm5mFKA/Qwd-kzarG8M.jpg?size=768x1024&quality=96&sign=76a549104f09bb5ba6d47f4a2831b23c&type=album",title: 'Халат банный', price: 12000, description: 'Очень быстро сохнет.'},
+    {id: '3', img: "https://sun9-49.userapi.com/impg/0mlv-qEF2ZUYT1LtAMjjIjca6tIGO4tktpL_hA/pYX4g-VPILw.jpg?size=800x600&quality=96&sign=df10b092533a7332419a19ae4917ea0f&type=album",title: 'Полотенца', price: 5000, description: 'Хорошо пропускают воздух'}
 ]
 
 const getTotalPrice = (items = []) => {
