@@ -47,10 +47,6 @@ const Form = () => {
                 value={number}
                 onChange={onChangeNumber}
             />
-            <select className={'select'}>
-                <option value={'physical'}>Физ. лицо</option>
-                <option value={'legal'}>Юр. лицо</option>
-            </select>
         </div>
     );
 };
