@@ -20,7 +20,6 @@ const Form = () => {
         }else{
             tg.MainButton.show();
         }
-
     },[name,number])
 
     const onChangeName = (e) =>{
@@ -35,12 +34,14 @@ const Form = () => {
         <div className={"form"}>
             <h3>Введите ваши данные</h3>
             <input
+                className={'input'}
                 type="text"
                 placeholder="Имя"
                 value={name}
                 onChange={onChangeName}
             />
             <input
+                className={'input'}
                 type="text"
                 placeholder="Номер"
                 value={number}
