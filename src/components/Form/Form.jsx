@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import './From.css'
+import './Form.css'
 import {useTelegram} from "../../hooks/useTelegram";
 
 const Form = () => {
@@ -47,6 +47,10 @@ const Form = () => {
                 value={number}
                 onChange={onChangeNumber}
             />
+            <select className={'select'}>
+                <option value={'physical'}>Физ. лицо</option>
+                <option value={'legal'}>Юр. лицо</option>
+            </select>
         </div>
     );
 };
