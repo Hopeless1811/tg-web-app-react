@@ -28,7 +28,7 @@ const ProductList = () => {
 
     const onSendData = useCallback(() => {
         tg.MainButton.hide(); //заглушка
-        tg.onClose();
+        tg.Close();
         const data = {
             products: addedItems,
             totalPrice: getTotalPrice(addedItems),
