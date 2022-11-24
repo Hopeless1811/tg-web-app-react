@@ -11,7 +11,7 @@ import '../ProductItem/ProductItem.css';
 
 const products = [
     {id: '1',img: <img className={'img'} src={bad}/>, title: 'Постельное бельё', price: 5000, description: 'Более 15 цветов на разный вкус'},
-    {id: '2',img: <img className={'img'} src={halati}/>, title: 'Халат банный', price: 12000, description: 'Очень быстро сохнет.       '},
+    {id: '2',img: <img className={'img'} src={halati}/>, title: 'Халат банный', price: 12000, description: 'Хорошо сохраняет тепло и не вызывает раздражений.'},
     {id: '3',img: <img className={'img'} src={polotenca}/>, title: 'Полотенца', price: 5000, description: 'Хорошо пропускают воздух'}
 ]
 
