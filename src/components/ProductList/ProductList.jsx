@@ -24,10 +24,11 @@ const getTotalPrice = (items = []) => {
 
 const ProductList = () => {
     const [addedItems, setAddedItems] = useState([]);
-    const {tg, queryId} = useTelegram();
+    const {onClose,tg, queryId} = useTelegram();
 
     const onSendData = useCallback(() => {
         tg.MainButton.hide(); //заглушка
+        tg.onClose();
         const data = {
             products: addedItems,
             totalPrice: getTotalPrice(addedItems),
